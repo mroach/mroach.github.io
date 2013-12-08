@@ -10,7 +10,11 @@ Data from the `Session` object is now added to reports. Data is described/string
 
 ### Param scrubbing
 
-Sensitive paramter values are now scrubbed. Each character is replaced with an asterisk.
+Sensitive paramter values are now scrubbed. Each character is replaced with an asterisk. By default, any parameter in the following list will be scrubbed:
+
+<p><code>password password_confirmation confirm_password secret secret_token creditcard credit_card credit_card_number card_number ccnum cc_number</code></p>
+
+You can override this list by setting the `Rollbar.ScrubParams` configuration option.
 
 
 [View RollbarSharp on GitHub](https://github.com/mroach/rollbarsharp)
