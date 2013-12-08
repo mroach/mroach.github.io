@@ -11,3 +11,6 @@ Data from the `Session` object is now added to reports. Data is described/string
 ### Param scrubbing
 
 Sensitive paramter values are now scrubbed. Each character is replaced with an asterisk.
+
+
+[View RollbarSharp on GitHub](https://github.com/mroach/rollbarsharp)
