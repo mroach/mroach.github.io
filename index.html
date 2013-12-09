@@ -1,40 +1,10 @@
 ---
+layout: default
 title: mroach.com
 ---
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>mroach.com</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>mroach</h1>
-        <p></p>
-        <p class="view"><a href="https://github.com/mroach">GitHub</a></p>
-        <p class="view"><a href="https://twitter.com/mroach">Twitter</a></p>
-        <p class="view"><a href="https://instagram.com/mroach_">Instagram</a></p>
-      </header>
-      <section>
-        {% for post in site.posts %}
-          <h2>{{ post.title }}</h2>
-          <p>{{ post.content }}</p>
-          <p><small>Posted {{ post.date | date_to_string }}</small></p>
-        {% endfor %}
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-  </body>
-</html>
+{% for post in site.posts %}
+  <h2>{{ post.title }}</h2>
+  <p>{{ post.content }}</p>
+  <p><small>Posted {{ post.date | date_to_string }}</small></p>
+{% endfor %}
