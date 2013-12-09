@@ -1,0 +1,102 @@
+---
+title: mroach.com
+---
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>mroach.com</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/jquery-jvectormap-1.2.2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery-jvectormap-1.2.2.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery-jvectormap-world-mill-en.js"></script>
+    <script type="text/javascript">
+      var countries = [
+        { id: "AT", lived: false, name: "Austria" },
+        { id: "BE", lived: false, name: "Belgium" },
+        { id: "CA", lived: false, name: "Canada" },
+        { id: "CZ", lived: false, name: "Czech Republic" },
+        { id: "DK", lived: false, name: "Denmark" },
+        { id: "FR", lived: false, name: "France" },
+        { id: "DE", lived: false, name: "Germany" },
+        { id: "GR", lived: false, name: "Greece" },
+        { id: "HK", lived: false, name: "Hong Kong" },
+        { id: "ID", lived: false, name: "Indonesia" },
+        { id: "IT", lived: false, name: "Italy" },
+        { id: "IN", lived: false, name: "India" },
+        { id: "JP", lived: false, name: "Japan" },
+        { id: "MO", lived: false, name: "Macau" },
+        { id: "MY", lived: false, name: "Malaysia" },
+        { id: "NL", lived: false, name: "Netherlands" },
+        { id: "NO", lived: false, name: "Norway" },
+        { id: "PL", lived: false, name: "Poland" },
+        { id: "SG", lived: false, name: "Singapore" },
+        { id: "SK", lived: false, name: "Slovakia" },
+        { id: "ZA", lived: false, name: "South Africa" },
+        { id: "KR", lived: false, name: "South Korea" },
+        { id: "ES", lived: false, name: "Spain" },
+        { id: "CH", lived: false, name: "Switzerland" },
+        { id: "SE", lived: true,  name: "Sweden" },
+        { id: "TW", lived: false, name: "Taiwan" },
+        { id: "TH", lived: false, name: "Thailand" },
+        { id: "TR", lived: false, name: "Turkey" },
+        { id: "GB", lived: false, name: "United Kingdom" },
+        { id: "US", lived: true,  name: "United States" },
+      ];
+      var map;
+      $(function(){
+        map = new jvm.WorldMap({
+          map: 'world_mill_en',
+          container: $('#map'),
+          color: '#d6d1bf',
+          backgroundColor: 'transparent',
+          hoverOpacity: 0.7,
+          hoverColor: false,
+          series: {
+            regions: [{
+              attribute: 'fill'
+            }]
+          }
+        });
+
+        var o = {};
+        $.each(countries, function(ix, c) {
+          o[c.id] = c.lived ? '#a3bfd2' : '#A7B6AA';
+        });
+        console.debug(o);
+        map.series.regions[0].setValues(o);
+      });
+    </script>
+    <style type="text/css">
+      body {
+        background: #d8d7cd url('/assets/paper-bg.png') repeat 50% 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>mroach</h1>
+        <p></p>
+        <p class="view"><a href="https://github.com/mroach">GitHub</a></p>
+        <p class="view"><a href="https://twitter.com/mroach">Twitter</a></p>
+        <p class="view"><a href="https://instagram.com/mroach_">Instagram</a></p>
+      </header>
+      <section>
+        <div id="map" style="height: 300px; width: 100%"></div>
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
