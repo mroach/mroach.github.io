@@ -1,4 +1,5 @@
 ---
+layout: post
 title: RollbarSharp updated to 0.3.0
 ---
 

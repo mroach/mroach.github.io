@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Gardener for Visual Studio
 ---
 

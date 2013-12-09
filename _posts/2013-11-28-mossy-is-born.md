@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Mossy is Born!
 ---
 
