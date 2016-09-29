@@ -183,6 +183,11 @@ footer {
   bottom:50px;
 }
 
+figure {
+  /* Webkit defaults to a 40px margin */
+  margin: 0;
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
