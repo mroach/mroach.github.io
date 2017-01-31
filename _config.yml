@@ -1,0 +1,8 @@
+url: http://mroach.com
+name: mroach.com
+excerpt_separator: <!--more-->
+markdown: kramdown
+exclude: [vendor]
+sass:
+  sass_dir: _sass
+  style: compressed
