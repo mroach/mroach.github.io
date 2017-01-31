@@ -1,0 +1,78 @@
+---
+# Main site styling
+---
+@media print {
+  header { display: none }
+}
+.cv {
+  .h1, .h2 { color: #000523 }
+  p { font-weight: 300; }
+  h2 { text-transform: uppercase; }
+
+  .head {
+    text-align:
+    right; min-height: 160px;
+    h1 {
+      margin: 0 0;
+      font-size: 3rem;
+      border-bottom:
+      solid 2px #489894;
+      margin-left: 130px;
+    }
+    .photo {
+      float: left;
+      img {
+        height: 120px;
+        border-radius: 70px;
+        padding: 3px;
+        border: solid 3px #489894;
+      }
+    }
+    .info-line {
+      font-size: 1.1em;
+      margin-bottom: .5em;
+    }
+    .socials span { margin-left: 0.5em }
+  }
+  .skill {
+    margin: .5em 0;
+    border-bottom: dashed 1px #ddd;
+    .title {
+      display: inline-block;
+      width: 300px;
+      h4 { margin: 0 }
+      i {
+        font-size: 1.7em;
+        display: inline-block;
+        margin-right: 0.2em;
+        line-height: 0.75em;
+        vertical-align: -25%;
+      }
+    }
+
+    .level {
+      display: inline-block;
+    }
+
+    .description {
+      margin: .5em 0
+    }
+  }
+
+  .icon-kitchen-sink {
+    i { font-size: 2em; }
+  }
+}
+
+.rating {
+  display: flex;
+  align-items: stretch;
+  width: 100px;
+  & > div {
+    height: 5px;
+    margin: 0.1em;
+    background-color: #489894;
+    flex-grow: 1
+  }
+  .empty { opacity: 0.4 }
+}

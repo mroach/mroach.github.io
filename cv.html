@@ -2,61 +2,188 @@
 layout: default
 title: CV - Michael Roach
 ---
-
+<script type="text/javascript">
+  $(function() {
+    var maxRating = 5;
+    $('.rating').each((ix, e) => {
+      let $self = $(e)
+      let fill = $self.data('fill')
+      for (let i = 1; i <= maxRating; i++) {
+        $self.append($('<div>', {class: i <= fill ? 'fill' : 'empty'}))
+      }
+    })
+  });
+</script>
 <div class="cv">
   <div class="head">
     <div class="photo">
       <img src="/images/me.jpg" alt="Mike Roach" />
     </div>
     <h1>Michael Roach</h1>
-    <div class="info-line">Web Developer &middot; Database Admin &middot; Scuba Diving Instructor</div>
+    <div class="info-line">Full-stack Developer &middot; SysAdmin &middot; Scuba Diving Instructor</div>
     <div class="email"><a href="mailto:mroach@mroach.com">mroach@mroach.com</a></div>
     <div class="phone">
       <a href="tel:+66902798468">+66 902 78 84 69</a>
+      <a href="tel:+6585474988">+65 8547 4988</a>
     </div>
-    <div class="birthday">8 October 1985</div>
+    <div class="socials">
+      <span><i class="fa fa-github"></i> <a href="https://github.com/mroach">mroach</a></span>
+      <span><i class="fa fa-stack-overflow"></i> <a href="http://stackoverflow.com/users/642978/mroach">mroach</a></span>
+    </div>
   </div>
-  <h2>Profile</h2>
-  <p>From Boston, Massachusetts, US. Developed an early interest in gadgets, electronics, and computers. Started working at an early age to fund building a computer. A programming hobby turned into a job directly out of high school and was kept for ten years. Moved to Sweden in the summer of 2009, retaining the same job and becoming a full time remote employee. Moved back to the US for one year before leaving my job to travel. I’m the reverse-engineering, problem solving, figure-it-out-yourself kind with a passionate interest in gadgets, technology, world travel, and most recently, scuba diving. Certified PADI Master Scuba Diver Trainer currently working in Koh Tao, Thailand.</p>
+
+  <p>
+    Detail-oriented full-stack developer with over 15 years of professional software and system administration experience.
+    Organised, critical thinker, driven to create detailed specs, design, build, test, and deliver high quality solutions that solve real-world problems.
+    Thrives when working with teams of passionate, talented developers, and when working alone remotely or on site.
+    Enjoys opportunities to mentor junior developers and learn from experiences of more senior developers.
+  </p>
+
+  <h2>Core Skills</h2>
+  <div class="skill">
+    <div class="title"><h4><i class="devicons devicons-ruby_on_rails"></i> Ruby on Rails</h4></div>
+    <div class="level"><div class="rating" data-fill="5"></div></div>
+    <div class="description">
+      3 years experience creating fast, clean, documented Rails 4 and 5 applications.
+      Backed by PostgreSQL, tested with RSpec. Asset hosting on Amazon AWS.
+    </div>
+  </div>
+  <div class="skill">
+    <div class="title"><h4><i class="devicons devicons-php"></i> PHP</h4></div>
+    <div class="level"><div class="rating" data-fill="5"></div></div>
+    <div class="description">8 years experience building, maintaining, refactoring PHP up through version 6.</div>
+  </div>
+  <div class="skill">
+    <div class="title"><h4><i class="devicons devicons-html5"></i> HTML, CSS, JavaScript</h4></div>
+    <div class="level"><div class="rating" data-fill="5"></div></div>
+    <div class="description">15 years of web development. From hand-written HTML in Notepad to ASP, PHP, Perl, ASP.NET MVC and Ruby on Rails.</div>
+  </div>
+  <div class="skill">
+    <div class="title"><h4><i class="devicons devicons-dotnet"></i> C#, ASP.NET MVC</h4></div>
+    <div class="level"><div class="rating" data-fill="5"></div></div>
+    <div class="description">
+      5 years C# v2.0 - v4.5. Primarily with ASP.NET, library code, or console utilities.
+      Use of IoC, advanced logging, templating, and markup rendering.
+      Created an open source Rollbar client for .NET: <a href="https://github.com/mroach/RollbarSharp">RollbarSharp</a>.
+    </div>
+  </div>
+  <div class="skill">
+    <div class="title"><h4><i class="devicons devicons-msql_server"></i> Microsoft SQL Server</h4></div>
+    <div class="level"><div class="rating" data-fill="5"></div></div>
+    <div class="description">
+      10 years with versions 2000 - 2008 R2.
+      Extensive experience creating and maintaining: normalised schema, views, procedures, user functions, and CLR objects for applications requiring heavy business logic in the database.
+      Managing security, backups, performance monitoring, jobs.
+    </div>
+  </div>
+  <div class="skill">
+    <div class="title"><h4><i class="devicons devicons-linux"></i> Linux System Administration</h4></div>
+    <div class="level"><div class="rating" data-fill="4"></div></div>
+    <div class="description">
+      Capable and comfortable setting-up and maintaining Linux (Debian-based) servers
+      with myriad server applications.
+      Comfortable building from source, debugging, troubleshooting.
+    </div>
+  </div>
+  <div class="skill">
+    <div class="title"><h4><i class="devicons devicons-windows"></i> Windows System Administration</h4></div>
+    <div class="level"><div class="rating" data-fill="4"></div></div>
+    <div class="description">
+      From Windows NT 4 up through Window 7/Server 2012, setup AD domains, Exchange, security, updates, troubleshooting.
+    </div>
+  </div>
+  <div class="skill">
+    <div class="icon-kitchen-sink">
+      <i class="devicons devicons-sass"></i>
+      <i class="devicons devicons-git"></i>
+      <i class="devicons devicons-perl"></i>
+      <i class="devicons devicons-javascript"></i>
+      <i class="devicons devicons-css3"></i>
+      <i class="devicons devicons-mysql"></i>
+      <i class="devicons devicons-postgresql"></i>
+      <i class="devicons devicons-apple"></i>
+      <i class="devicons devicons-ubuntu"></i>
+      <i class="devicons devicons-terminal"></i>
+      <i class="devicons devicons-gnu"></i>
+      <i class="devicons devicons-aws"></i>
+      <i class="devicons devicons-sublime"></i>
+      <i class="devicons devicons-atom"></i>
+      <i class="devicons devicons-visualstudio"></i>
+    </div>
+    <div class="description">
+      Varying degrees of experience with dozens of programming languages, frameworks, server technologies.
+      <ul>
+        <li>Bash and Perl utility scripts.</li>
+        <li>Highly capable with regular expressions and general data manipulation.</li>
+        <li>Experience and interest in reverse engineering and data migrations.</li>
+        <li>VMWare server and desktop use and Parallels on the desktop.</li>
+        <li>High familiarity with macOS for personal and development.</li>
+      </ul>
+    </div>
+  </div>
 
   <h2>Work Experience</h2>
-
   <h3>Jungle Coders, Koh Tao, Thailand — 2016-Present</h3>
-  <p>Senior Ruby on Rails developer and devops at Jungle Coders based in Koh Tao, Thailand.</p>
+  <p>
+    Senior Ruby on Rails developer and devops at Jungle Coders based in Koh Tao, Thailand.
+    Responsible for projects from spec through design, testing, delivery, and support.
+    Evaluated prospective developers to find the perfect fits for our team.
+    Setup and maintained production cloud servers.
+  </p>
 
   <h3>Sairee Cottage Diving, Koh Tao, Thailand — 2015-Present</h3>
-  <p>Worked as a PADI Master Scuba Diver Trainer at one of the premier dive shops on Koh Tao in Thailand. Took novice divers on try-dives, certified new divers, increased the training level of already-certified divers. Additionally, worked in the reception of the dive shop to welcome new customers, provide customer, service, and help people with the logistics of their diving trip.</p>
+  <p>
+    PADI Master Scuba Diver Trainer at a top tier dive shop on Koh Tao in Thailand.
+    Took novice divers on try-dives, certified new divers, increased the training level of already-certified divers.
+    Additionally, worked in the reception of the dive shop to welcome new customers, provide customer service, and plan logistics of dive trips.
+  </p>
+
+  <h3>Datatel Electrical and Communications, Perth, Australia — 2014-2015</h3>
+  <p>
+    Lead software engineer.
+    Datatel relies heavily on technology to streamline data collection from a hundred field users and generating reports for government broadband installation contracts.
+    Led a team of remote developers managing the home-grown PHP application and expanding its capabilities.
+
+    Laid the ground work for a rewrite of the system in Rails. Made heavy use of RSpec for specification testing to ensure top quality with the new platform. Left thorough documentation for the next developers.
+</p>
 
   <h3>Breuer &amp; Co., Wakefield, MA, US — 2003-2013</h3>
-  <p>An information systems company based near Boston, Massachusetts with a 35 year history of delivering highly customised, secure, and robust data warehousing systems. The company’s core markets today are in school information systems, healthcare, and accounting systems. During my time there the company grew from roughly ten to 50 employees and maintained its tight-knit community feel between all employees, including management.</p>
+  <p>
+    An information systems company based near Boston, Massachusetts with a 35 year history of delivering highly customised, secure, and robust data warehousing systems.
+    The company’s core markets are in school information systems, healthcare, and accounting systems.
+  </p>
 
-  <p>Started as a spring internship position and became a full time position after a month. Primary responsibility since the beginning was the development of hosted data systems. Secondary responsibility for many years was as network co-administrator and IT support for the company’s Windows environment, network infrastructure, and phone system. Created and maintained dozens of desktop and web applications using VB, ASP, PHP, C#, ASP.NET Forms, ASP.NET MVC, Ruby on Rails, and all with heavy use of Microsoft SQL Server on the backend. Applications and modules were required to be generic but highly customisable to suit the needs of as many of our 120 clients as possible. On such example was creating a credit card and bank transfer payment system that could support eight different payment providers across the world, multiple currencies, configurable payment options, and a configurable look and feel. Operating hosted data systems demands strict attention to performance and security. Setting-up new clients on the hosted data system platform requires extensive data migration with reverse engineering of current data systems. Most implementations I did involved an on-site visit to assist in client training and helping them understand the data migration.</p>
-
-  <h3>Staples, Danvers MA, US — 2002-2003</h3>
-  <p>Part time employment as a cashier, customer service associate, and floor salesman. Floor salesmen sold mobile phones, digital cameras, printers, shredders, fax machines, and the like. Required familiarity with a broad range of products and matching the right equipment to customer needs.</p>
+  <p>
+    Primary responsibility was the development of hosted data systems.
+    Secondary responsibility for several years as network administrator and IT support for the company’s Windows environment, network infrastructure, and phone system.
+  </p>
+  <p>
+    Created and maintained dozens of desktop and web applications using VB, ASP, PHP, C#, ASP.NET, Ruby on Rails, and all with heavy use of Microsoft SQL Server on the backend.
+    Applications and modules were required to be generic but highly customisable to suit the needs of as many of our 120 clients as possible.
+    On such example was creating a credit card and bank transfer payment system that could support eight different payment providers across the world,
+    multiple currencies, configurable payment options, and a configurable look and feel.
+  </p>
+  <p>
+    Operating hosted data systems demands strict attention to performance and security.
+    Setting-up new clients on the hosted data system platform requires extensive data migration with reverse engineering of current data systems.
+    Many implementations involved an on-site visit to assist in client training.
+  </p>
 
   <h3>MicroData Corporation, Topsfield MA, US — 2000-2001</h3>
-  <p>Junior support staff at an IT consultancy. Created an internal documentation web system, inventoried and organised our spare system parts, constructed and installed CAT5 and power distribution boxes. Assisted or led the repair of workstations and servers suffering from hardware or software problems.</p>
-
-  <h3>Topsfield Fair, Topsfield MA, US — 2000</h3>
-  <p>Summer and fall position on the grounds-keeping and maintenance staff of the local fairgrounds. Painting, small construction projects, landscaping, trash removal, and light vehicle maintenance.</p>
-
+  <p>
+    Junior support staff at an IT consultancy. Built a web-based internal documentation and job tracking system, inventoried and organised the parts warehouse, constructed and installed CAT5 and power distribution boxes.
+    Setup and repaired workstations and servers on-site and at clients.
+  </p>
 
   <h2>Education</h2>
-  <h3>University of Massachusetts, Lowell MA — MIS, 2004-2005</h3>
-  <p>Completed one year of university courses before returning to full-time employment.</p>
+  <h3>University of Massachusetts, Lowell, MA — 2004-2005</h3>
+  <p>Completed one year of MIS courses before returning to full-time employment.</p>
 
-  <h2>Technical Skills</h2>
-  <ul>
-    <li>10 years experience with Microsoft SQL Server versions 2000 - 2008 R2. Extensive experience creating and maintaining: schema, views, procedures, user functions, CLR objects. Managing: security, backups, SQL Server Agent jobs.</li>
-    <li>10+ years of web development. From hand-written HTML in Notepad to ASP, PHP, ASP.NET MVC 4 and Ruby on Rails apps.</li>
-    <li>5 years C# experience using v2.0 - v4.5. Primarily developing with ASP.NET, library code, or console utility applications. Use of dependency injection (Ninject and Castle), advanced logging (log4net and NLog), templating (StringTemplate and Mustache), and markup rendering (Markdown). Created an open source library project packed with extension methods and helpers to ease development of new projects. Created an open source Rollbar client for .NET.</li>
-    <li>Years of experience with Subversion and Git for version control.
-Intermediate Bash, Perl and Ruby experience, mostly creating small utility scripts and smaller applications.</li>
-    <li>Experience setting-up and maintaining Linux (Gentoo, Debian, and Ubuntu) systems for a variety of purposes such as MySQL, Apache, Nginx, Samba, Postfix, XMPP chat services, Asterisk, as well as for personal projects and home services.</li>
-    <li>Highly capable with regular expressions.</li>
-    <li>Experience and interest in reverse engineering and data migrations.</li>
-    <li>VMWare server and desktop use and Parallels on the desktop.</li>
-    <li>High familiarity with Mac OS X in a personal environment.</li>
-  </ul>
+  <h2>Personal</h2>
+  <p>
+    I'm a lifelong gadget and video game nerd and all that entails.
+    I've been an avid traveler my whole adult life.
+    I discovered a love for scuba diving and became an instructor for a year in Thailand.
+    I'm a foodie. I love to cook and love to eat.
+  </p>
 </div>
