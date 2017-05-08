@@ -107,3 +107,30 @@ i[class$="sublime"]          { color: #4c4c4c }
 i[class$="atom"]             { color: #36ad7d }
 i[class$="visualstudio"]     { color: #68217a }
 i[class$="nginx"]            { color: #309900 }
+
+.flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.33333333em;
+  line-height: 1em;
+  font-size: 1.2em;
+}
+.flag-icon:before {
+  content: "\00a0";
+}
+
+.flag-icon-eu {
+  background-image: url(../images/flags/eu.svg);
+}
+.flag-icon-gb {
+  background-image: url(../images/flags/gb.svg);
+}
+.flag-icon-us {
+  background-image: url(../images/flags/us.svg);
+}
+.flag-icon-se {
+  background-image: url(../images/flags/se.svg);
+}
