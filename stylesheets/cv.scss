@@ -42,7 +42,9 @@
   }
   .skill {
     margin: .5em 0;
-    border-bottom: dashed 1px #ddd;
+    &:not(.last) {
+      border-bottom: dashed 1px #ddd;
+    }
     .title {
       display: inline-block;
       width: 300px;
