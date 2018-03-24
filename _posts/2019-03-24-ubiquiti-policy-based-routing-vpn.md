@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Policy-based routing with over VPN using Ubiquiti EdgeRouter
+title: Policy-based routing over VPN with Ubiquiti EdgeRouter
 ---
 
 <div style="text-align: center">
