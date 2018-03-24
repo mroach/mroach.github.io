@@ -3,13 +3,17 @@ layout: post
 title: Policy-based routing with over VPN using Ubiquiti EdgeRouter
 ---
 
-![edgerouterx](/images/er-x.png)
+<div style="text-align: center">
+  <a href="https://amzn.to/2G6DuPH" target="_blank">
+    <img src="/images/er-x.png" alt="EdgeRouter X" />
+  </a>
+</div>
 
 Let's route specific LAN devices over persistent VPN connections!
 
 <!--more-->
 
-I've got a Ubiquiti EdgeRouter X as my home router. I opted for this over a typical consumer-grade router since I'm the kind of person that likes to open up a shell and start hacking around to do fun things that you can't do with consumer-oriented hardware. At around US$60 it's a steal for what it does.
+I've got a Ubiquiti EdgeRouter X as my home router. I opted for this over a typical consumer-grade router since I'm the kind of person that likes to open up a shell and start hacking around to do fun things that you can't do with consumer-oriented hardware. It's a steal at twice the price. [Check it out on Amazon](https://amzn.to/2G6DuPH).
 
 
 A perfect example is using policies to route specific devices through a persistent VPN connection. I've found some content blocked where I live and I don't like that. Also, for some devices I want a higher level of privacy and security, and many devices either can't VPN on their own (TVs, streaming boxes) or can't guarantee that all traffic will be routed over the VPN. With the router these are easily solved!
