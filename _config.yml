@@ -4,6 +4,31 @@ excerpt_separator: <!--more-->
 markdown: kramdown
 exclude: [vendor]
 future: true
-sass:
-  sass_dir: _sass
-  style: compressed
+lang: en
+timezone: UTC
+
+theme: jekyll-whiteglass
+
+plugins:
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate_path: /posts/:num/
+paginate: 10
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: category_archives
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+google_analytics: UA-116394902-1
+twitter_username: mroach
+
+# sass:
+#   sass_dir: _sass
+#   style: compressed
