@@ -7,7 +7,7 @@ future: true
 lang: en
 timezone: UTC
 
-theme: jekyll-whiteglass
+remote_theme: yous/whiteglass
 
 plugins:
   - jekyll-archives
