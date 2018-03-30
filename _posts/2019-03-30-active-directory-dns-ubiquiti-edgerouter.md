@@ -113,7 +113,7 @@ What we're doing there is adding an `A` record for the domain controller, and th
 
 Whichever option you pick, it's time to verify that it's working.
 
-# Linux or macOS
+### Linux or macOS
 
 The `host` command does the job nicely
 
@@ -144,7 +144,7 @@ host -t SRV _kerberos._tcp.dc._msdcs.${domain} 10.65.49.10
 host -t SRV _ldap._tcp.dc._msdcs.${domain} 10.65.49.10
 ```
 
-# Windows
+### Windows
 
 Open the command prompt and run `nslookup`, type in `set type=all` and hit enter, then type each hostname bits and hit enter. You should get answers with `SRV service location:` and all the configuration we added above:
 
