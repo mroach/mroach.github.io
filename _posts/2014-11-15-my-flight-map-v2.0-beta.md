@@ -1,6 +1,10 @@
 ---
 layout: post
 title: My Flight Map v2.0 Beta
+categories:
+  - announcements
+tags:
+  - myflightmap
 ---
 
 The 2.0 beta version of [My Flight Map](http://www.myflightmap.com) is currently open for beta testing at [kaya.mroach.com](http://kaya.mroach.com). This is a full rewrite using Rails 4.1. With the new platform it will be easier to maintain and add features. The UI is the last bit needing some attention.

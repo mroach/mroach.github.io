@@ -1,6 +1,14 @@
 ---
 layout: post
 title: Reverting to Readline 6.3.8 to unbreak the Rails console
+categories:
+  - code
+  - ruby
+tags:
+  - ruby
+  - readline
+  - macos
+  - homebrew
 ---
 
 When running a `brew upgrade`, it upgraded `readline` to version 7.0. This

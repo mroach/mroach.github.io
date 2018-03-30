@@ -1,6 +1,11 @@
 ---
 layout: post
 title: openssl non-interactive
+categories:
+  - cheatsheet
+tags:
+  - openssl
+  - ssl
 ---
 
 Using `openssl` with the `--subject` argument allows you to generate certificates

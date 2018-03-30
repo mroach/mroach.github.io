@@ -1,6 +1,12 @@
 ---
 layout: post
 title: RollbarSharp updated to 0.3.0
+categories:
+  - code
+  - opensource
+tags:
+  - dotnet
+  - rollbar
 ---
 
 The new release adds two bits of missing functionality.
