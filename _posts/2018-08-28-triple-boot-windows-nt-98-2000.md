@@ -3,7 +3,6 @@ layout: post
 title: Triple-booting Windows 98, NT 4, and 2000
 categories:
   - retro
-  - personal
 tags:
  - retro
  - dell
