@@ -56,7 +56,20 @@ The common thread here is that all three operating systems understand FAT16. All
 * `ntdetect.com` - Windows NT and 2000 - detects hardware during boot process
 * `ntldr` - Windows NT and 2000 loader
 
-The cleanest way to achieve this will be to make our `C:` drive a small FAT16 partition. I also like using this partition to store basic drivers like Ethernet to make the setup process easier.
+The cleanest way to achieve this will be to make our `C:` drive a small FAT16 partition. I also like using this partition to store basic drivers like Ethernet to make the setup process easier. So the final partition table:
+
+| Drive | FS    | Size   | Purpose      |
+| ----- | ----  | -----: | ------------ |
+| `C:`  | FAT16 | 512 MB | Boot/Util    |
+| `D:`  | FAT32 |  12 GB | Windows 98   |
+| `E:`  | NTFS  |   4 GB | Windows NT   |
+| `F:`  | NTFS  |  12 GB | Windows 2000 |
+
+Windows 2000 actually assigned itself drive `H:`, after the CD-RW and DVD drives. Don't know why, but didn't want to fight it...
+
+<div style="text-align: center; margin: 20px auto">
+  <img src="/images/triple-boot-partitions.png" />
+</div>
 
 ## FreeDOS
 
