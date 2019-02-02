@@ -26,7 +26,6 @@ jekyll-archives:
     category: /categories/:name/
     tag: /tags/:name/
 
-google_analytics: UA-116394902-1
 twitter_username: mroach
 
 # sass:
