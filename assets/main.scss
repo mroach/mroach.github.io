@@ -27,8 +27,6 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
-
 // whiteglass also includes a mixin for defining media queries.
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -43,7 +41,16 @@ $on-laptop:        800px;
   }
 }
 
+dt {
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 0.5em;
+}
 
+dd {
+  margin: 0;
+  padding: 0 0 0.5em 0;
+}
 
 // Import partials from the `whiteglass` theme.
 @import "whiteglass";
