@@ -7,9 +7,7 @@ main:
     url: /archives/
   - title: "GitHub"
     url: https://github.com/mroach
-  - title: "SO"
+  - title: "Stack Overflow"
     url: http://stackoverflow.com/users/642978/mroach
-  - title: "YouTube"
-    url: https://www.youtube.com/user/meatballtime
   - title: "CV"
     url: /cv.html
