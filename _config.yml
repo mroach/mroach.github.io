@@ -1,5 +1,5 @@
 url: http://mroach.com
-name: mroach.com
+title: mroach.com
 excerpt_separator: <!--more-->
 markdown: kramdown
 exclude: [vendor]
@@ -14,6 +14,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+permalink: /:year/:month/:day/:title/
 paginate_path: /posts/:num/
 paginate: 10
 
@@ -25,8 +26,6 @@ jekyll-archives:
   permalinks:
     category: /categories/:name/
     tag: /tags/:name/
-
-twitter_username: mroach
 
 # sass:
 #   sass_dir: _sass
