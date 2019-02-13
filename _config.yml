@@ -6,6 +6,7 @@ exclude: [vendor]
 future: true
 lang: en
 timezone: UTC
+repository: mroach/mroach.github.io
 
 remote_theme: yous/whiteglass
 
