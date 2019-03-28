@@ -52,5 +52,9 @@ dd {
   padding: 0 0 0.5em 0;
 }
 
+.post-content a {
+  background: linear-gradient(to bottom, transparent 60%, #fffdbb);
+}
+
 // Import partials from the `whiteglass` theme.
 @import "whiteglass";
