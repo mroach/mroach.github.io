@@ -1,0 +1,366 @@
+
+<h1>Dell Dimension XPS T450</h1>
+
+Table of contents
+<ol>
+  <li><a href="#configuration">Configuration</a></li>
+  <li>
+    <a href="#changes-and-upgrades">Changes and upgrades</a>
+    <ol>
+      <li><a href="#bios">BIOS update</a></li>
+      <li><a href="#battery">Battery replacement</a></li>
+      <li><a href="#scsi">SCSI controller and HDD</a></li>
+      <li><a href="#nic">Network card</a></li>
+      <li><a href="#zip">Zip drive</a></li>
+      <li><a href="#sound">Sound card upgrade</a></li>
+      <li><a href="#fan">Fan replacement</a></li>
+      <li><a href="#voodoo-bios">Voodoo3 BIOS</a></li>
+      <li><a href="#cpu">CPU upgrade</a></li>
+      <li><a href="#os">Operating systems</a></li>
+    </ol>
+  </li>
+  <li><a href="#photos">Photos</a></li>
+  <li><a href="#history">History</a></li>
+</ol>
+
+<a name="configuration"></a>
+<h2>Configuration</h2>
+
+<table border="4" bordercolor="#000080" cellpadding="4" rules="all">
+  <thead bgcolor="#bbbbbb">
+    <tr>
+      <th align="left">Component</th>
+      <th>Original</th>
+      <th>Current</th>
+      <td></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th align="left" bgcolor="#dddddd">Processor</th>
+      <td>
+        <a href="http://www.cpu-world.com/sspec/SL/SL35D.html">Pentium III (Katmai) @ 450 MHz</a>
+      </td>
+      <td>
+        <a href="http://www.cpu-world.com/sspec/SL/SL43F.html">Pentium III (Coppermine) @ 850 MHz</a>
+      </td>
+      <td><img src="/retro/images/logos/pentium_iii.png" style="height: 50px" /></td>
+    </tr>
+
+    <tr>
+      <th align="left" bgcolor="#dddddd">Memory</th>
+      <td>128 MB SDRAM</td>
+      <td>512 MB SDRAM (2x256MB Micron PC133 DIMMs)</td>
+      <td><img src="/retro/images/logos/micron.png" style="height: 50px" /></td>
+    </tr>
+
+    <tr>
+      <th align="left" bgcolor="#dddddd">Video Card</th>
+      <td colspan="2">3dfx Voodoo3 3000 AGP 16MB</td>
+      <td><img src="/retro/images/logos/3dfx.png" style="height: 50px" /></td>
+    </tr>
+
+    <tr>
+      <th align="left" bgcolor="#dddddd">Hard Drive</th>
+      <td><em>None</em></td>
+      <td>Fujitsu 73 GB Ultra160 SCSI 10K RPM (MAN3735MP)</td>
+      <td><img src="/retro/images/logos/scsi.png" style="height: 50px" /></td>
+    </tr>
+
+    <tr>
+      <th align="left" bgcolor="#dddddd">SCSI Controller</th>
+      <td><em>None</em></td>
+      <td>Adaptec AHA-2940UW UltraSCSI PCI</td>
+      <td><img src="/retro/images/logos/adaptec.png" style="height: 50px" /></td>
+    </tr>
+
+    <tr>
+      <th align="left" bgcolor="#dddddd">Sound Card</th>
+      <td>Yamaha XG 64V (Integrated)</td>
+      <td>Creative SoundBlaster Live! 5.1</td>
+      <td><img src="/retro/images/logos/soundblaster.png" style="height: 50px" /></td>
+    </tr>
+
+    <tr>
+      <th align="left" bgcolor="#dddddd">Network Card</th>
+      <td>D-Link DE-528 10BASE-T/BNC</td>
+      <td>3Com EtherLink XL 10/100 3C905C-TX</td>
+      <td><img src="/retro/images/logos/3com.gif" style="height: 50px" /></td>
+    </tr>
+
+    <tr>
+      <th align="left" bgcolor="#dddddd">Modem</th>
+      <td colspan="2">3Com/US Robotics WinModem 56k</td>
+      <td><img src="/retro/images/logos/3com.gif" style="height: 50px" /></td>
+    </tr>
+
+    <tr>
+      <th align="left" bgcolor="#dddddd">DVD-ROM</th>
+      <td colspan="2">Hitachi GD-5000</td>
+    </tr>
+
+    <tr>
+      <th align="left" bgcolor="#dddddd">CD-RW</th>
+      <td colspan="2">Sony CD-RW CRX230ED</td>
+    </tr>
+
+    <tr>
+      <th align="left" bgcolor="#dddddd">Zip Drive</th>
+      <td><em>None</em></td>
+      <td>Iomega Zip 250 MB</td>
+      <td><img src="/retro/images/logos/zip250.png" style="height: 50px" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div style="margin: 2em 0">
+  <img src="/retro/images/t450/on_desk.jpg" style="width: 800px;" />
+  <p>Setup with an Eizo S1721 LCD (with internal speakers!)</p>
+</div>
+
+<a name="changes-and-upgrades"></a>
+<h2>Changes and upgrades</h2>
+
+<p>The configuration of this system has been rather heavily modified since I first got it.</p>
+
+<a name="bios"></a>
+<h3>BIOS Update</h3>
+
+<p>The system came with BIOS version <em>A05</em>. Aside from the fact that I always
+like to be running the latest BIOS, I would need a at least <em>A06</em> to support
+my planned upgrade to a Coppermine Pentium III. Upgrading to <em>A11</em> went smoothly.</p>
+
+<hr />
+<a name="battery"></a>
+<h3>Battery replacement</h3>
+
+<p>Surprisingly the CMOS battery seemed to be working, but I replaced it anyway.
+It's a standard <u>CR2032</u> 3 volt watch battery. Easy replacement.</p>
+
+<hr />
+<img src="/retro/images/2940_boxed.jpg" style="height: 200px; float: right; margin: 0 0 1em 1em" />
+<a name="scsi"></a>
+<h3>SCSI Controller and hard drive</h3>
+
+<p>Most of these systems shipped with IDE hard drives, and this one was no different.
+I had the seller throw it away to save on shipping costs.</p>
+
+<p>On eBay I was able to easily get my favourite SCSI controller: the <u>Adaptec AHA-2940UW</u>.
+It's only my favourite for nostalgia value as the Dell Dimension XPS D266 we had when I was a kid
+had one of these controllers. It's a great controller though with both 68 and 50-pin connectors internally
+as well as an external HD68 connector.</p>
+
+<p>Finding a 68-pin SCSI hard drive at a reasonable price is not nearly as easy. They're
+relatively rare since most servers used <a href="https://en.wikipedia.org/wiki/Single_Connector_Attachment">SCA</a>
+and the 68-pin was mostly for high-end workstations. With a bit of patience, I found one at a decent
+price on eBay: a <u>Fujitsu 73 GB</u> at 10,000 RPM.</p>
+
+<p>Lastly I needed a 68-pin cable, and ideally not one with 8 connectors as many of them have.
+I found a great mesh-wrapped single-drive cable on eBay that was probably used to connect to an SCA backplane.</p>
+
+<p>To get the HDD activity light on the front of the system to show SCSI disk activity,
+you need to connect the <tt>LED</tt> pin headers on the card to the motherboard. It has
+four pins, but only two are needed. I used a spare CD audio cable. Works great!</p>
+
+<p>Before installing any operating systems, I upgraded the BIOS to 2.20. I don't know
+what changed since version 1.32 (I think that's what it came with) but I always like
+running the latest BIOS.</p>
+
+<hr />
+<a name="nic"></a>
+<img src="/retro/images/logos/3com.gif" style="float: right; height: 80px; margin: 0 0 1em 1em">
+<h3>Network card</h3>
+
+<p>The system came with a <u>D-Link DE-528 10BASE-T/BNC</u> which as the name suggests
+is only 10 Mbit. This won't do, and besides, my favourite network card is the <u>3Com 3C905C</u>
+which I immediately swapped in. This is a 10/100 card with support for Wake-on-LAN and
+PXE (network) boot with the built in ROM. Unfortunately neither WoL nor PXE booting
+are working. I don't know why and I gave up on it. (Yes, I have the WoL cable
+connected to the motherboard).</p>
+
+<hr />
+<a name="zip"></a>
+<img src="/retro/images/logos/zip250.png" style="float: right; height: 80px; margin: 0 0 1em 1em" />
+<h3>Zip Drive</h3>
+
+<p>Zip drives were optional hardware on these systems and this one didn't come with one.
+I was able to easily get an <u>IDE Iomega Zip 250MB</u> drive on eBay. The IDE
+drives are <i>much</i> faster than parallel.</p>
+
+<p>I'd love to get an external SCSI drive but those are really expensive.
+Fun fact though: the external parallel drives are actually SCSI drives with a
+parallel-to-SCSI controller.</p>
+
+<hr />
+<a name="sound"></a>
+<h3>Sound card</h3>
+
+<p>The system has a Yamaha onboard audio chip. It's ok, but nothing to get excited about.
+Something to get excited about is the card I had back in these days: a <u>Creative SoundBlaster Live! 5.1</u>.
+I installed this, and disabled the Yamaha card in the BIOS so the OS doesn't even see it.</p>
+
+<p>Dell removed the Yamaha onboard audio soon after the release of the T series, so
+many later models don't have it at all.</p>
+
+<hr />
+<a name="fan"></a>
+<h3>Fan swap</h3>
+
+<p>The original fan worked, but it was loud. It sounded like the bearings were shot.
+There's no fixing that.</p>
+
+<p>The system takes a standard <u>92mm</u> fan with 3-pin connector.</p>
+
+<p>I originally bought a <u>be quiet! Shadow Wings</u> since they're nice quiet fans.
+The problem is that the fan mount in the case is <i>not</i> standard. (See <a href="#photo-inside">below</a>).
+It's a plastic box that the fan clips into, and the Shadow Wings is not a perfect square of a fan;
+it bulges out a bit, just enough so it won't slide into the holder.</p>
+
+<p>I then purchased a <u>Arctic F9 Silent</u> since it looked square. Works fine!</p>
+
+<hr />
+<a name="voodoo-bios"></a>
+<img src="/retro/images/logos/3dfx.png" style="float: right; height: 80px; margin: 0 0 1em 1em" />
+<h3>Voodoo3 3000 BIOS update</h3>
+
+<p>As mentioned, I love an updated BIOS. But one thing that bugged me about the Voodoo3 3000
+was that the card showed up on boot as a <u>Voodoo3 3000<b>D</b></u>. My searches confirmed
+my suspicion that this meant "Dell". Fortunately the card is identical to a normal Voodoo3
+and updating the BIOS with a normal one makes this go away.</p>
+
+<table border="4" bordercolor="#000080" cellpadding="4" rules="all">
+  <tr>
+    <th>Before</th>
+    <th>After</th>
+  </tr>
+  <tr>
+    <td><img src="/retro/images/t450/voodoo3_before.jpg" style="height: 400px" /></td>
+    <td><img src="/retro/images/t450/voodoo3_after.jpg" style="height: 400px" /></td>
+  </tr>
+</table>
+
+<hr />
+<a name="cpu"></a>
+<img src="/retro/images/t450/cpuz.png" style="float: right; margin: 0 0 1em 1em" />
+<h3>Processor upgrade</h3>
+
+<p>This system shipped with a <u>Pentium III @ 450 Mhz</u>, hence the system model name of <u>T450</u>.
+I used this CPU for a few weeks, and it was all right, but I wanted better performance.</p>
+
+<p>This motherboard uses a Slot 1/SECC2 processor interface which was introduced on the Pentium II and
+lasted for about half the life of the Pentium III. This motherboard also only supports a 100 MHz FSB.
+So when shopping for processors, I needed a Slot 1 100 MHz processor.</p>
+
+<p>Since Pentium III transitioned to Socket 370 and a 133 MHz later in its life,
+it's hard (read: expensive and rare) to find high-speed Slot 1 100 MHz PIIIs.
+This system would support up to a 1 GHz CPU, but those are going for > $900 on eBay...</p>
+
+<p>There are Slot 1 to Socket 370 adapter cards, but that's not interesting to me.</p>
+
+<p>I found an 850 MHz CPU on eBay for $20 shipped which was far more reasonable.
+This nice thing with Slot 1 is the CPU just pops right into the slot like a PCI card.
+The heatsink was already installed on the CPU, so I didn't even have to thermal grease anything.</p>
+
+<p>The funny thing is that the BIOS decides on the system's model based on the CPU. So after the CPU upgrade,
+the system identifies as a <u>T850r</u> instead of a <u>T450</u>.
+The <i>r</i> suffix indicates that this is a Coppermine processor in Slot 1 configuration.
+A Coppermine Socket 370 would appear as plain <u>T850</u>.</p>
+
+<table border="4" bordercolor="#000080" cellpadding="4" rules="all">
+  <tr>
+    <th>Before</th>
+    <th>After</th>
+  </tr>
+  <tr>
+    <td><img src="/retro/images/t450/cpu_before.jpg" style="height: 400px" /></td>
+    <td><img src="/retro/images/t450/cpu_after.jpg" style="height: 400px" /></td>
+  </tr>
+</table>
+
+<hr />
+<a name="os"></a>
+<img src="/retro/images/t450/win2k-about.png" style="float: right; margin: 0 0 1em 1em" />
+<h2>Operating Systems</h2>
+
+<p>Picking an OS for this system wasn't easy, so I went with three. I wrote
+a whole blog post on <a href="/2018/08/28/triple-boot-windows-nt-98-2000">triple booting Windows NT 4.0, 98, and 2000</a>
+which is not quite as straight forward as you might imagine.</p>
+
+<p>At one point I did install Windows XP, but I've never been an XP fan and it holds
+zero nostalgia value for me, so I got rid of it. I have the system defaulting to
+booting into Windows 2000. Windows 98 is only installed for playing <u>Command &amp; Conquer: Red Alert</u>
+which is the only game I played back in the day that didn't work on NT/2000.</p>
+
+<p>Windows NT 4.0 is installed just for fun. I have period-accurate software installed
+like SQL Server 7, Visual Basic 6, and Office 97.</p>
+
+<p>Windows 2000 has a bunch of period-accurate software that I enjoy:</p>
+<ul>
+  <li>Office 2000</li>
+  <li>SQL Server 2000 Developer Edition</li>
+  <li>Nero Burning ROM 5.5</li>
+  <li>foobar 2000</li>
+  <li>Exact Audio Copy</li>
+</ul>
+
+<p>Since I still buy audio CDs and neither my desktop PC nor MacBook Pro have optical drives,
+this system still gets regular use ripping my CDs to FLAC and backing-up on my NAS.</p>
+
+<hr />
+<a name="photos"></a>
+<h2>Photos</h2>
+
+<h2>Back of system</h2>
+<a name="photo-back"></a>
+<img src="/retro/images/t450/back.jpg" />
+
+<h2>Inside</h2>
+<p>I removed the CPU air duct for the photo.</p>
+<a name="photo-inside"></a>
+<a href="/retro/images/t450/inside.jpg">
+  <img src="/retro/images/t450/inside.jpg" style="width: 800px" />
+</a>
+
+<hr />
+<a name="history"></a>
+<img src="/retro/images/t450/demo_setup.jpg" style="float: right; height:400px; margin: 0 0 1em 1em" />
+<h2>History</h2>
+
+<p>The Dimension XPS T series was the successor the Pentium II D series. The most
+visible change is the front bezel being redesigned, but the rest of the chassis
+is the same. The motherboard is also the same Intel 440BX board.</p>
+
+<p>The XPS line in the 90s had a bunch of variations:</p>
+
+<table>
+  <tr>
+    <th>M</th>
+    <td>Pentium MMX</td>
+  </tr>
+  <tr>
+    <th>D</th>
+    <td>Pentium II</td>
+  </tr>
+  <tr>
+    <th>R</th>
+    <td>Pentium II with T-series bezel</td>
+  </tr>
+  <tr>
+    <th>V</th>
+    <td>Pentium II with T-series bezel</td>
+  </tr>
+  <tr>
+    <th>T</th>
+    <td>Pentium III</td>
+  </tr>
+  <tr>
+    <th>B</th>
+    <td>Pentium III with RDRAM and i820 chipset</td>
+  </tr>
+</table>
+
+<p>I found this ad from a magazine back in 1999 that shows some standard
+configurations and prices.</p>
+
+<img src="/retro/images/t450/T450-PC_Mag_April_1999.png" style="width: 800px" border="2" />
