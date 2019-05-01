@@ -145,13 +145,15 @@
   <h2>Changes and upgrades</h2>
 
   <p>The configuration of this system has been rather heavily modified since I first got it.</p>
+  <p>I wanted to keep my changes fairly period-accurate. Most of the changes I made
+  were options directly from Dell during the lifetime of the T-series.</p>
 
   <a name="bios"></a>
   <h3>BIOS Update</h3>
 
-  <p>The system came with BIOS version <em>A05</em>. Aside from the fact that I always
-  like to be running the latest BIOS, I would need a at least <em>A06</em> to support
-  my planned upgrade to a Coppermine Pentium III. Upgrading to <em>A11</em> went smoothly.</p>
+  <p>The system came with BIOS version <code>A05</code>. Aside from the fact that I always
+  like to be running the latest BIOS, I would need a at least <code>A06</code> to support
+  my planned upgrade to a Coppermine Pentium III. Upgrading to <code>A11</code> went smoothly.</p>
 
   <hr />
   <a name="battery"></a>
@@ -184,8 +186,8 @@
   I found a great mesh-wrapped single-drive cable on eBay that was probably used to connect to an SCA backplane.</p>
 
   <p>To get the HDD activity light on the front of the system to show SCSI disk activity,
-  you need to connect the <tt>LED</tt> pin headers on the card to the motherboard. It has
-  four pins, but only two are needed. I used a spare CD audio cable. Works great!</p>
+  you need to connect the <code>LED</code> pin headers on the card to the motherboard's <code>SCSI</code> headers.
+  It has four pins, but only two are needed. I used a spare CD audio cable. Works great!</p>
 
   <p>Before installing any operating systems, I upgraded the BIOS to 2.20. I don't know
   what changed since version 1.32 (I think that's what it came with) but I always like
@@ -232,6 +234,10 @@
   <p>Dell removed the Yamaha onboard audio soon after the release of the T series, so
   many later models don't have it at all.</p>
 
+  <p>Interesting to note is that the Sound Blaster Live! was a configurable option
+  from Dell, but they sold an inferior model. It didn't support DirectSound or EAX.
+  You can spot these in the wild by avoiding the part numbers <code>SB0200</code> and <code>SB0203</code>.</p>
+
   <hr />
   <a name="fan"></a>
   <h3>Fan swap</h3>
@@ -275,6 +281,12 @@
       <td><img src="/retro/images/t450/voodoo3_after.jpg" style="width: 500px" /></td>
     </tr>
   </table>
+
+  <p>I've noticed this card runs <em>hot</em>. There's not software-readable temperature sensor
+  so I can't give a number, but the heatsink is hot to the touch. Enough to make your hand
+  recoil. And that's not even when gaming, just when sitting at the desktop.
+  I searched around and this is a known problem and you can find videos of aftermarket
+  fan installations. But it seems stable, so I'm leaving it as is.</p>
 
   <hr />
   <a name="cpu"></a>
