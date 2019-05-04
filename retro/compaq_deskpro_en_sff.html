@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <title>Compaq Deskpro EN SFF - Retro Tech</title>
+  <style type="text/css">
+    hr { clear: both; color: 000080; }
+    code { background: #eee; padding: 0 0.2em; }
+    body {
+      font-family: Verdana, Arial, sans-serif;
+      font-size: 10pt;
+      max-width: 1024px;
+    }
+    pre {
+      background: #eee;
+      padding: 0.5em;
+      border: solid 2px #ccc;
+    }
+  </style>
+</head>
+<body bgcolor="#FFF7E9">
+  <h1>Compaq Deskpro EN SFF</h1>
+
+  <a name="configuration"></a>
+  <h2>Configuration</h2>
+  <table border="4" bordercolor="#E1001F" cellpadding="4" rules="all" bgcolor="white">
+    <thead bgcolor="#bbbbbb">
+      <tr>
+        <th align="left">Component</th>
+        <th>Original</th>
+        <th>Current</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Processor</th>
+        <td colspan="2">Pentium III (Coppermine) @ 866 MHz</td>
+      </tr>
+      <tr>
+        <th>Memory</th>
+        <td>384 MB (3x128 MB)</td>
+        <td>512 MB (2x128 MB, 1x256MB PC133 SDRAM)</td>
+      </tr>
+      <tr>
+        <th>Hard Drive</th>
+        <td>20 GB Maxtor IDE</td>
+        <td>45 GB IBM Deskstar IDE</td>
+      </tr>
+      <tr>
+        <th>Graphics</th>
+        <td colspan="2">nVidia TNT2 RIVA (integrated AGP)</td>
+      </tr>
+      <tr>
+        <th>Sound</th>
+        <td colspan="2">AC'97 (integrated) w/ integrated speaker</td>
+      </tr>
+      <tr>
+        <th>Network</th>
+        <td colspan="2">Intel PRO/100 (integrated)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="margin: 2em 0">
+    <img src="/retro/images/deskpro_en/bios_about.jpg" style="width: 500px" />
+  </div>
+
+  <h2>Why?</h2>
+  <p>Personally, this is retro nostalgia for me because it was the system everyone
+  had back at my first job in computers. I was only 15 years old back in 2000,
+  but I got to work at a company that did IT contract work.
+  Everyone had a Deskpro EN SFF on their desk with a nice Compaq CRT sitting on top of it.</p>
+  <p>I admire the system for its compact form factor and clever case design that makes
+  working on it much easier than a lot of systems from that era.</p>
+  <p>I never had one of my own, but I've always had a fondness for them. I saw one
+  on eBay with a great configuration and a steal of a price ($40 shipped) and I bought it immediately.</p>
+
+  <h2>Notable Features</h2>
+
+  <h3>Integrated Speaker</h3>
+  <p>One thing I love about this system is that it has an integrated speaker. Not just a
+  "PC speaker" that beeps, but a properly amplified real speaker. This is great for simple alert sounds,
+  listening to a message, a small video, things like that. These systems were mostly designed for
+  use in offices where having a set of desktop speakers is expensive and a waste of space given what
+  they're usually used for. As a retro machine I don't use often, it's pleasing to hear
+  the Windows startup sounds and alert without having to hook up speakers.</p>
+
+  <h3>Front panel audio</h3>
+  <p>In the late 90s it was not a common thing to have front-panel audio jacks.
+  This system has a headphone and microphone jack there and of course when you plug
+  in headphones this cuts off the internal speaker.</p>
+
+  <h3>Chipset</h3>
+  <p>It sports the Intel 815 chipset which limits you to 512 MB of RAM, but
+  then supports a Tualatin Pentium III up tp 1.4 GHz.</p>
+
+  <h3>Integrated NIC with PXE (netboot)</h3>
+  <p>As a business-oriented PC, it's got an integrated 10/100 Mbit NIC. This
+  was not so common on PCs in the 1990s. Typically you'd have to buy a PCI expansion
+  card if you wanted the luxury of LAN access. This has the Intel PRO/100 integrated. Handy.</p>
+  <p>It has a PXE boot ROM, so you can boot off your system off of your LAN if you have a PXE
+  server setup. I do have one setup, and it works great. I can press <kbd>F12</kbd> during
+  boot, select the LAN as my boot device, and run Linux live CDs, memtest, install Linux.</p>
+
+  <h2>Changes and upgrades</h2>
+
+  <h3>BIOS</h3>
+  <p>I always like an up-to-date BIOS. This system supports flashing the BIOS via a Windows app
+  which is very cool. So after installing Windows 2000 I upgraded the BIOS.</p>
+
+  <h3>Memory</h3>
+  <p>It looked like the system was upgraded by its previous owner from 128 to 384 MB of RAM.
+  This was fine, but I wanted to max out the system. It has 3 PC133 DIMM slots, but because of the
+Intel 815 chipset, the system is limited to 512 MB of RAM. Of course I tried 768 MB anyway, but system
+refused to boot with an error message you don't see often: that there's too much memory installed.</p>
+
+  <h3>Graphics</h3>
+  <p>The Deskpro EN optionally came with an <strong>nVidia TNT2 Riva</strong> graphics chip embedded
+  on the motherboard. I was lucky and my system had this. It's a pretty decent little chip as
+  the predecessor to the GeForce 256. It's integrated as an AGP device, and this is the only
+  AGP bus on the system so any graphics card upgrades would have to go into one of the three PCI slots.</p>
+
+  <h3>Hard Drive</h3>
+  <p>The system came with a Maxtor 20 GB drive. The first time I turned it on, it sounded like
+  some rusted iron plates spinning around. I binned that drive immediately and replaced it with a spare
+  IBM Deskstar 60 GB I had lying around.</p>
+
+  <p>I did buy a SCSI controller (Adaptec AHA-2940UW, naturally) for the system. The problem
+  is that the interior is so cramped that I'd need a <em>tiny</em> SCSI cable to not
+  completely obstruct airflow, and those seem to not really exist. The system has the IDE
+  cables routed and folded nicely so that they don't get in the way. So, I'm sticking with that for now.</p>
+
+  <p>I have it in my mind to get a PCI SATA controller and 2.5" (laptop) HDD. That would
+  give performance comparable to SCSI without making a mess of the interior.</p>
+
+  <h3>CD-ROM</h3>
+  <p>The system came with a bog standard CD-ROM drive which I would have happily kept.
+  Unfortunately the drive tray has a really hard time ejecting. I had to use a paperclip
+  to pop it open. I opened up the drive and the drive belt seems ok, so maybe the motor is just
+  on its last leg? I needed a working drive to install Windows, so I put a Lite-On CD-RW
+  drive in there. Works fine, but it's a bit yellowed and doesn't match the bezel.</p>
+
+  <h3>Operating System</h3>
+  <p>The system shipped with Windows 2000, as evidenced by the license and CD key sticker
+  affixed to the case. As that's my favourite operating system, that's what I installed.</p>
+
+  <p>Just for fun, I also installed Linux. Some Linux distributions are starting to
+  drop support for the <code>i386</code> architecture which is understandable but a shame.
+  Fortunately there's a community-maintained distribution of <a href="https://archlinux32.org/">Arch Linux 32-bit</a>.
+  I've installed that using <strong>i3</strong> as my window manager since it's so lightweight.</p>
+
+  <p>Modern browsers however do not work. They all hard crash with <code>Invalid Instruction</code>.
+  My suspicion is that they're compiled expecting the <code>SSE2</code> instruction which was not
+  present until the Pentium 4.</p>
+
+  <h3>lshw</h3>
+  <pre>
+H/W path           Device           Class       Description
+===========================================================
+                                    system      Deskpro
+/0                                  bus         0680h
+/0/1                                memory      128KiB BIOS
+/0/5                                processor   Pentium III (Coppermine)
+/0/5/6                              memory      32KiB L1 cache
+/0/5/7                              memory      256KiB L2 cache
+/0/21                               memory      System Memory
+/0/21/0                             memory      128MiB DIMM SDRAM Synchronous 133 MHz (7.5 ns)
+/0/21/1                             memory      128MiB DIMM SDRAM Synchronous 133 MHz (7.5 ns)
+/0/21/2                             memory      256MiB DIMM SDRAM Synchronous 133 MHz (7.5 ns)
+/0/22                               memory      Flash Memory
+/0/22/0                             memory      512KiB Chip FLASH Non-volatile
+/0/0                                memory
+/0/2                                memory
+/0/100                              bridge      82815 815 Chipset Host Bridge and Memory Controller Hub
+/0/100/1                            bridge      82815 815 Chipset AGP Bridge
+/0/100/1/0                          display     NV5 [Riva TNT2 / TNT2 Pro]
+/0/100/1e                           bridge      82801 PCI Bridge
+/0/100/1e/8        enp2s8           network     82801BA/BAM/CA/CAM Ethernet Controller
+/0/100/1e/a        scsi0            storage     AIC-7870P/7881U [AHA-2940U/UW/D/S76]
+/0/100/1f                           bridge      82801BA ISA Bridge (LPC)
+/0/100/1f.1                         storage     82801BA IDE U100 Controller
+/0/100/1f.4                         bus         82801BA/BAM UHCI USB 1.1 Controller #2
+/0/100/1f.4/1      usb1             bus         UHCI Host Controller
+/0/100/1f.4/1/2                     bus         USB 1.1 2 port downstream low-power hub
+/0/100/1f.4/1/2/3                   input       IBM USB Travel Keyboard with Ultra Nav
+/0/100/1f.5                         multimedia  82801BA/BAM AC'97 Audio Controller
+/0/3               scsi1            storage
+/0/3/0.0.0         /dev/sda         disk        61GB IC35L060AVVA07-0
+/0/3/0.0.0/1       /dev/sda1        volume      19GiB Windows NTFS volume
+/0/3/0.0.0/2       /dev/sda2        volume      37GiB Extended partition
+/0/3/0.0.0/2/5     /dev/sda5        volume      36GiB EXT4 volume
+/0/3/0.0.0/2/6     /dev/sda6        volume      508MiB Linux swap volume
+/0/4               scsi2            storage
+/0/4/0.0.0         /dev/cdrom       disk        LTR-40125S</pre>
+</body>
+</html>
