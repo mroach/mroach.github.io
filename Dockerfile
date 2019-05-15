@@ -10,7 +10,6 @@ WORKDIR /site
 # If we copied the whole site and then ran bundle, the gems would have to be
 # re-installed every time any file in the app changed
 COPY Gemfile ./
-COPY Gemfile.lock ./
 
 RUN bundle install
 
