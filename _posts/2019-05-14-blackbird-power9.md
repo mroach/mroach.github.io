@@ -5,6 +5,12 @@ categories:
   - tech
 ---
 
+<div style="text-align: center; margin: 20px auto">
+  <a href="https://raptorcs.com/content/BK1B02/intro.html">
+    <img src="/images/blackbird-board.jpg" alt="Blackbird mATX board and CPU" />
+  </a>
+</div>
+
 Recently I've been intrigued by non-x86 developments in tech. Over the past few
 years as [Moore's Law] has been breaking down, each new generation of x86 processors
 has been delivering smaller performance gains. Apple is rumoured to be building
@@ -27,6 +33,7 @@ most especially the boot and OS install process.
 Here's the hardware list I've put together for how I'd build the system:
 
 ### [Blackbird 8-Core Bundle]
+
 
 This includes
 
@@ -55,6 +62,11 @@ Nothing special here! Standard NVMe should work just fine on the board.
 
 Price: **$125**
 
+**Update**: It was [pointed out to me on Twitter](https://twitter.com/RobinBa40108750/status/1128399031179403265)
+that the board doesn't have an M.2 slot for NVMe. Raptor themselves said they can
+vouch for the compatibility of this [PCIe to M.2/NGFF adapter](https://twitter.com/RobinBa40108750/status/1128399031179403265)
+which is just **$21**.
+
 ### Power Supply
 
 The hardware compatibility list published by Raptor currently doesn't have
@@ -77,8 +89,9 @@ GeForce cards sitting around that I'd try out before spending money.
 | [Blackbird 8-Core Bundle] | $1,604 |
 | 16 GB RAM | $125 |
 | NVMe SSD | $125 |
+| PCIe to M.2 adapter | $21 |
 | Power Supply | $88 |
-| **Total** | **$1,942** |
+| **Total** | **$1,963** |
 
 Spending $2,000 on a fully open source system and piece of computing history
 seems like a good deal to me.
