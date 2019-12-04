@@ -53,6 +53,10 @@ iface eth0 inet static
   address 10.65.0.3/24
   gateway 10.65.0.1
 
+auto eth0.2
+iface eth0.2 inet static
+  address 10.65.2.3/24
+
 auto eth0.5
 iface eth0.5 inet static
   address 10.65.5.3/24
@@ -81,6 +85,54 @@ change I made was to my firewall to block all outbound port 53 traffic.
 This prevents naughty devices from ignoring the DNS settings and talking directly
 to DNS servers they have hardcoded. Chrome, Amazon Echo, smart TVs, and all
 sorts of "smart" devices have been caught with hardcoded DNS.
+
+### Securing Pi-hole with iptables
+
+Now that the Pi-hole is joined to every VLAN, by default any host on any VLAN
+would have access to the HTTP admin, SSH, or any other services you have
+running on the host. Since it's joined directly to the VLAN and requests
+won't go through your router, locking-down ports has to be done on the Pi-hole
+using `iptables`.
+
+In my case, my VLAN `2` is for management, so any traffic from that VLAN is
+permitted. On all other VLANs, only port `53` traffic is accepted.
+
+Here's what I did, using `sudo`:
+
+```shell
+sudo iptables -A INPUT -i lo -j ACCEPT
+sudo iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+sudo iptables -A INPUT -i eth0.2 -j ACCEPT
+sudo iptables -A INPUT -i eth0 -p tcp -m tcp --dport 53 -j ACCEPT
+sudo iptables -A INPUT -i eth0 -p udp -m udp --dport 53 -j ACCEPT
+sudo iptables -A INPUT -i eth0.3 -p tcp -m tcp --dport 53 -j ACCEPT
+sudo iptables -A INPUT -i eth0.3 -p udp -m udp --dport 53 -j ACCEPT
+sudo iptables -A INPUT -i eth0.5 -p tcp -m tcp --dport 53 -j ACCEPT
+sudo iptables -A INPUT -i eth0.5 -p udp -m udp --dport 53 -j ACCEPT
+sudo iptables -A INPUT -i eth0.7 -p tcp -m tcp --dport 53 -j ACCEPT
+sudo iptables -A INPUT -i eth0.7 -p udp -m udp --dport 53 -j ACCEPT
+sudo iptables -A INPUT -i eth0.10 -p tcp -m tcp --dport 53 -j ACCEPT
+sudo iptables -A INPUT -i eth0.10 -p udp -m udp --dport 53 -j ACCEPT
+sudo iptables -A INPUT -i eth0.20 -p tcp -m tcp --dport 53 -j ACCEPT
+sudo iptables -A INPUT -i eth0.20 -p udp -m udp --dport 53 -j ACCEPT
+sudo iptables -A INPUT -i eth0.30 -p tcp -m tcp --dport 53 -j ACCEPT
+sudo iptables -A INPUT -i eth0.30 -p udp -m udp --dport 53 -j ACCEPT
+sudo iptables -P INPUT DROP
+```
+
+Bonus fun: if you have a lot of VLANs you can create a Cartesian product of
+VLAN IDs and tcp/udp and generate the script:
+
+```shell
+echo {2,3,5,7,10,20,30}" "{tcp,udp} | \
+  xargs -n2 sh -c 'echo iptables -A INPUT -i eth0.$1 -p $2 -m $2 --dport 53 -j ACCEPT' sh
+```
+
+Then once you're happy with how everything is working, save the configuration:
+
+```shell
+sudo iptables-save | sudo tee /etc/pihole/rules.v4
+```
 
 
 [guide to setting-up DoH]: https://docs.pi-hole.net/guides/dns-over-https/
