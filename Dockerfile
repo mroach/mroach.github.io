@@ -1,7 +1,8 @@
 FROM ruby:2-alpine
 
 # build-base is required to build gems' native extensions
-RUN apk add --no-cache build-base
+# inotify-tools lets auto rebuilds happen faster
+RUN apk add --no-cache build-base inotify-tools
 
 WORKDIR /site
 
@@ -11,10 +12,9 @@ WORKDIR /site
 # re-installed every time any file in the app changed
 COPY Gemfile ./
 
-RUN bundle install
+RUN bundle install -j$(nproc)
 
-COPY . ./
-
+VOLUME /site
 EXPOSE 4000
 
 CMD ["bundle", "exec", "jekyll", "serve", "-H", "0.0.0.0", "-P", "4000"]
