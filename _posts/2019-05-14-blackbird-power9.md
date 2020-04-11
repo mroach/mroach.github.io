@@ -41,7 +41,7 @@ This includes
 * 8-core POWER9 CPU
 * Heatsink + Fan
 
-The 4-core bundle is several hundred less, but doesn't incldue the heatsink which
+The 4-core bundle is several hundred less, but doesn't include the heatsink which
 costs another $110 separately, so may as well go for the larger kit. Plus 8
 cores should really shine with compiling code and running Dockerized apps.
 
